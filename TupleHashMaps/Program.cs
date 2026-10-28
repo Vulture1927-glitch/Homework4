@@ -1,4 +1,4 @@
-// Homework: Tuples and Hash Maps  (starter code)
+﻿// Homework: Tuples and Hash Maps  (starter code)
 // 1. Finish every method marked TODO.
 // 2. Write your answers for A1 and B1 in the comment boxes at the bottom of this file.
 // Do not change the tests in Main. Run with: dotnet run
@@ -137,14 +137,14 @@ public class HashTable
 /* ======================= A1: PREDICT THE OUTPUT =======================
    Write what each line prints BEFORE you run the code.
 
-   Line 1:
-   Line 2:
-   Line 3:
-   Line 4:
-   Line 5:
+   Line 1: 77
+   Line 2: 88
+   Line 3: True
+   Line 4: Lab
+   Line 5: 2
 
    Why do Line 4 and Line 5 act differently? (2 or 3 sentences)
-
+   
 */
 
 /* ======================= B1: HASH TABLE BY HAND =======================
