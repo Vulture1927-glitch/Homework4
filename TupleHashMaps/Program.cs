@@ -47,8 +47,16 @@ public class Program
     //     Use only ONE loop.
     static (int Min, int Max, double Average) Summarize(int[] scores)
     {
-        // TODO
-        return (0, 0, 0);
+        double average = 0;
+
+        for(int i = 0; i < scores.Length; i++)
+        {
+            average += scores[i];
+        }
+        double finalCount = average/scores.Length;
+        int Min = scores.Min();
+        int Max = scores.Max();
+        return (Min, Max, finalCount);
     }
 
     // ======================= PART B: HASH MAPS =======================
@@ -57,16 +65,42 @@ public class Program
     //     Treat upper and lower case as the same. Return the word in lowercase.
     static (string Word, int Count) MostFrequentWord(string text)
     {
+        Dictionary<string,int> wordCounts = new Dictionary<string, int>();
         string[] words = text.ToLower().Split(' ');
-        // TODO: count each word with a Dictionary<string, int>, then find the biggest count
-        return ("", 0);
+        foreach(string s in words)
+        {
+            if(wordCounts.ContainsKey(s))
+            {
+                wordCounts[s]++;
+            }
+            else
+            {
+                wordCounts[s] = 1;
+            }
+        }
+        string mostFrequent = "";
+        int highestCount = 0;
+        foreach(var item in wordCounts)
+        {
+            if(item.Value > highestCount)
+            {
+                highestCount = item.Value;
+                mostFrequent = item.Key;
+            }
+        }
+        return (mostFrequent, highestCount);
     }
 
     // B3: Return the names that are on BOTH lists. Use a HashSet.
     static HashSet<string> CommonNames(string[] first, string[] second)
     {
-        // TODO
-        return new HashSet<string>();
+
+        HashSet<string> common = new HashSet<string>(first);
+
+        common.IntersectWith(second);
+
+        return common;
+
     }
 }
 
@@ -121,16 +155,41 @@ public class HashTable
 
     // TODO: return true if the key is in the table, false if not.
     public bool ContainsKey(string key)
+{
+    Node? temp = dataMap[Hash(key)];
+
+    while (temp != null)
     {
-        return false;
+        if (temp.Key.Equals(key))
+        {
+            return true;
+        }
+
+        temp = temp.Next;
     }
+
+    return false;
+}
 
     // TODO: if the key is found, put its value in "value" and return true.
     //       If not found, set value = 0 and return false.
     public bool TryGet(string key, out int value)
     {
-        value = 0;
-        return false;
+        Node? temp = dataMap[Hash(key)];
+    value = 0;
+    while (temp != null)
+    {
+        if (temp.Key.Equals(key))
+        {
+            value = temp.Value;
+            return true;
+        }
+
+        
+        temp = temp.Next;
+    }
+
+    return false;
     }
 }
 
@@ -150,21 +209,21 @@ public class HashTable
 /* ======================= B1: HASH TABLE BY HAND =======================
    (a) Chaining. Example: 3: apple -> plum -> null
 
-   0:
-   1:
-   2:
-   3:
-   4:
-   5:
-   6:
+   0: Melon -> null
+   1: null
+   2: null
+   3: Apple -> Plum -> null
+   4: Kiwi -> null
+   5: null
+   6: lime -> null
 
    (b) Linear probing. Write the key in each slot, or "empty".
 
-   slot 0:
-   slot 1:
-   slot 2:
-   slot 3:
-   slot 4:
-   slot 5:
-   slot 6:
+   slot 0: Melon
+   slot 1:empty
+   slot 2: empty
+   slot 3:apple
+   slot 4:plum
+   slot 5:kiwi
+   slot 6:lime
 */

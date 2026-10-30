@@ -1,0 +1,15 @@
+C:\Users\isaac.stumm\Homework4\TupleHashMaps\obj\Debug\net10.0\TupleHashMaps.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\isaac.stumm\Homework4\TupleHashMaps\obj\Debug\net10.0\TupleHashMaps.AssemblyInfoInputs.cache
+C:\Users\isaac.stumm\Homework4\TupleHashMaps\obj\Debug\net10.0\TupleHashMaps.AssemblyInfo.cs
+C:\Users\isaac.stumm\Homework4\TupleHashMaps\obj\Debug\net10.0\TupleHashMaps.csproj.CoreCompileInputs.cache
+C:\Users\isaac.stumm\Homework4\TupleHashMaps\obj\Debug\net10.0\TupleHashMaps.sourcelink.json
+C:\Users\isaac.stumm\Homework4\TupleHashMaps\bin\Debug\net10.0\TupleHashMaps.exe
+C:\Users\isaac.stumm\Homework4\TupleHashMaps\bin\Debug\net10.0\TupleHashMaps.deps.json
+C:\Users\isaac.stumm\Homework4\TupleHashMaps\bin\Debug\net10.0\TupleHashMaps.runtimeconfig.json
+C:\Users\isaac.stumm\Homework4\TupleHashMaps\bin\Debug\net10.0\TupleHashMaps.dll
+C:\Users\isaac.stumm\Homework4\TupleHashMaps\bin\Debug\net10.0\TupleHashMaps.pdb
+C:\Users\isaac.stumm\Homework4\TupleHashMaps\obj\Debug\net10.0\TupleHashMaps.dll
+C:\Users\isaac.stumm\Homework4\TupleHashMaps\obj\Debug\net10.0\refint\TupleHashMaps.dll
+C:\Users\isaac.stumm\Homework4\TupleHashMaps\obj\Debug\net10.0\TupleHashMaps.pdb
+C:\Users\isaac.stumm\Homework4\TupleHashMaps\obj\Debug\net10.0\TupleHashMaps.genruntimeconfig.cache
+C:\Users\isaac.stumm\Homework4\TupleHashMaps\obj\Debug\net10.0\ref\TupleHashMaps.dll
